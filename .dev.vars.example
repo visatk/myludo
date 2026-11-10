@@ -1,0 +1,7 @@
+# Local Development Secrets for Royal Ludo Arena (myludo)
+# Copy this file to `.dev.vars` for local development.
+# In production, upload secrets with `cf deploy --secrets-file <path>` or `npx wrangler secret put <NAME> --name myludo`.
+
+TELEGRAM_BOT_TOKEN=demo-bot-token
+APIRONE_TRANSFER_KEY=demo-transfer-key
+APIRONE_CALLBACK_SECRET=ludo-apirone-callback-secret-2026

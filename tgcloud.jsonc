@@ -1,0 +1,44 @@
+{
+	// Telegram Serverless (tgcloud CLI 0.2.0) Configuration
+	// Documentation: https://core.telegram.org/bots/serverless
+	"code": "tgcloud",
+	"allowed_updates": ["message", "callback_query"],
+	"commands": {
+		"default": [
+			{
+				"command": "start",
+				"description": "Launch Royal Ludo Arena Mini App"
+			},
+			{
+				"command": "play",
+				"description": "Quick-match or host a private Ludo table"
+			},
+			{
+				"command": "daily",
+				"description": "Claim your daily +500 Gold Coins & +10 Gems"
+			},
+			{
+				"command": "leaderboard",
+				"description": "View Top 10 Grandmaster Commanders"
+			},
+			{
+				"command": "wallet",
+				"description": "Open Apirone Crypto Treasury (BTC, LTC, USDT, USDC)"
+			}
+		]
+	},
+	"static": {
+		"source": "dist",
+		"spa": true,
+		"immutable": ["/assets/*"],
+		"headers": [
+			{
+				"path": "/*",
+				"set": {
+					"Referrer-Policy": "no-referrer",
+					"X-Content-Type-Options": "nosniff"
+				}
+			}
+		]
+	}
+}
