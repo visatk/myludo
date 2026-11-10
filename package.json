@@ -1,0 +1,38 @@
+{
+	"name": "myludo",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"dev": "cf dev",
+		"build": "cf build",
+		"deploy": "cf deploy",
+		"typecheck": "cf workers types && tsc"
+	},
+	"devDependencies": {
+		"@cloudflare/vite-plugin": "beta",
+		"@faker-js/faker": "^10.6.0",
+		"@types/node": "^26.6.6",
+		"cf": "^1.0.0-beta.28",
+		"cross-env": "^10.1.0",
+		"dotenv": "^18.0.10",
+		"drizzle-kit": "^0.31.11",
+		"gh-pages": "^6.3.0",
+		"terser": "^5.51.2",
+		"typescript": "^7.0.2",
+		"vite": "^8.3.0",
+		"vite-tsconfig-paths": "^6.1.1"
+	},
+	"dependencies": {
+		"@cryptography/sha512": "^0.2.0",
+		"@hono/zod-validator": "^0.9.1",
+		"@telegram-apps/telegram-ui": "^2.1.13",
+		"@tma.js/sdk-react": "^3.0.23",
+		"big-integer": "^1.6.52",
+		"drizzle-orm": "^0.45.4",
+		"emoji-datasource": "^16.0.0",
+		"fflate": "^0.8.3",
+		"hono": "^4.13.17",
+		"qrcode": "^1.5.4",
+		"zod": "^4.6.7"
+	}
+}
